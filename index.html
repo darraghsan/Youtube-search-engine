@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="utf-8"/>
+	<title>SearchVidz</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$('.fancybox').fancybox();
+		});
+	</script>
+</head>
+
+<body>
+	<div id="container">
+		<header>
+			<h1>Search<span>Vidz</span></h1>
+			<p>Search all YouTube videos</p>
+		</header>
+		<section>
+			<form id="search_form" name="search_form" onsubmit="return search()">
+				<div class="fieldContainer">
+					<input type="search" id="query" class="search-field" placeholder="Search YouTube...">
+					<input type="submit" name="search-btn" id="search-btn" value="">
+				</div>
+			</form>
+
+			<ul id="results"></ul>
+			<div id="buttons"></div>
+		</section>
+		<footer>
+			<p>Copyright &copy; 2016 All Rights Reserved</p>
+		</footer>
+	</div>
+</body>
+</html>
